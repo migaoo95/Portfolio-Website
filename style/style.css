@@ -6,7 +6,7 @@
 }
 
 .section_navigation {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 60px;
   background-color: #3d4b62;
@@ -64,9 +64,55 @@
           align-items: center;
 }
 
+.section_one_wrapper {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section_one_wrapper .section_one_content {
+  border: 2px solid white;
+  width: 90%;
+  height: 585px;
+  margin: 0 auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section_one_wrapper .scroll_box {
+  height: 700px;
+  padding-top: 270px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+}
+
+.section_one_wrapper .scroll_box .scroll_box_two {
+  position: absolute;
+  left: -10px;
+}
+
+.section_one_wrapper .scroll_box span {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.section_one_wrapper .scroll_box .scroller {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .section_one {
   top: -100px;
-  position: relative;
+  position: absolute;
   padding: 150px 0;
   width: 100%;
   height: 780px;
