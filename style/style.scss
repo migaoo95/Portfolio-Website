@@ -1,15 +1,18 @@
+// VARAIBLES -------------
+$main-font: "menlo";
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: $main-font;
 }
 // NAVIGATION --------------------
 .section_navigation {
   position: relative;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #3d4b62;
-
+  font-size: 20px;
   .navigation_wrap {
     display: flex;
     justify-content: space-between;
@@ -21,14 +24,17 @@
       }
     }
     .nav {
-      padding: 10px 15px 0px 0px;
+      // padding: 10px 15px 0px 0px;
+      height: 100%;
+      margin-right: 20px;
       ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-decoration: none;
+        height: 100%;
         li {
-          margin-left: 25px;
+          margin-left: 40px;
           list-style-type: none;
           align-items: center;
           &:last-child {
@@ -51,30 +57,66 @@
 .section_one_wrapper {
   color: white;
   display: flex;
+
   .section_one_content {
-    border: 2px solid white;
+    // border: 2px solid green;
+    padding: 175px 0px;
     width: 90%;
     height: 585px;
     margin: 0 auto;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    .text_animation_box {
+      position: relative;
+      top: -10px;
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 50px;
+      }
+    }
+    h3 {
+      span {
+        font-size: 20px;
+        font-weight: 40;
+      }
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 45px;
+      font-weight: 100;
+    }
+    span {
+      color: #00ffc2;
+    }
   }
+  // SCROLL ELEMENTS ----------------
   .scroll_box {
-    height: 700px;
+    position: absolute;
     // border: 2px solid white;
-    padding-top: 270px;
+    height: 600px;
     text-align: center;
-    display: flex;
     vertical-align: middle;
     .scroll_box_two {
-      position: absolute;
-      left: -10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // Animate this for arrow effect
+      height: 65px;
+      top: 42%;
+      // border: 2px solid pink;
     }
     span {
       vertical-align: middle;
-      // transform: rotate(-90deg);
-      margin-right: 20px;
+      margin-right: 0px;
+      transform: rotate(-90deg);
     }
     .scroller {
       transform: rotate(-90deg);
