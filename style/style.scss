@@ -134,6 +134,20 @@ $main-font: "menlo";
   z-index: -2;
 }
 // SECTION TWO ---------------
+.atom_image {
+  // border: 1px solid red;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  overflow: hidden;
+  img {
+    position: relative;
+    top: -105px;
+    left: 63%;
+    // width: 300px;
+    // height: 400px;
+  }
+}
 .page_marker {
   position: relative;
   top: 20px;
@@ -162,32 +176,63 @@ $main-font: "menlo";
   }
 }
 .section_two {
-  width: 90%;
+  width: 80%;
   height: 800px;
   margin: 50px auto;
   // border: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   // PAGE MARKER CONTAINER $$$$$$$
 
   // PROFILE CONTAINER $$$$$$
   .profile_container {
     // border: 2px solid red;
-    margin-right: 20px;
+    // margin-right: 20px;
     // margin-top: 8%;
     img {
       width: 500px;
       height: 643px;
-      margin-right: 100px;
+      margin-right: 70px;
     }
   }
   // TEXT CONTAINER $$$$$$$
   .text_two_container {
     font-size: 30px;
     font-weight: bold;
-    width: 45%;
-    // margin-right: 100px;
+    width: 70%;
+    margin-right: 130px;
     // margin-top: 8%;
     // border: 2px solid red;
+    .text_two_box {
+      span {
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+      h4 {
+        color: #229f43;
+      }
+
+      .tech_container_one {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+      }
+      .tech_container_two {
+        // border: 2px solid blue;
+        width: 38.7%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .text_three_container {
+        // border: 2px solid green;
+        h4 {
+          margin: 0 35%;
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }
