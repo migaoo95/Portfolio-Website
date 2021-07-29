@@ -130,13 +130,64 @@ $main-font: "menlo";
   width: 100%;
   height: 780px;
   background-color: #233554;
-  transform: skewY(4deg);
+  transform: skewY(2deg);
   z-index: -2;
 }
 // SECTION TWO ---------------
+.page_marker {
+  position: relative;
+  top: 20px;
+  // border: 2px solid green;
+  margin-left: 20px;
+  .textNline {
+    position: relative;
+
+    margin-left: 30px;
+    display: flex;
+    // border: 2px solid blue;
+    .line {
+      margin-top: 22px;
+      margin-right: 20px;
+      border-radius: 20px;
+      width: 220px;
+      height: 0px;
+      border: 2px solid black;
+    }
+    h4 {
+      font-size: 40px;
+    }
+  }
+  span {
+    font-size: 70px;
+  }
+}
 .section_two {
   width: 90%;
   height: 800px;
-  margin: 80px auto;
-  border: 2px solid black;
+  margin: 50px auto;
+  // border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  // PAGE MARKER CONTAINER $$$$$$$
+
+  // PROFILE CONTAINER $$$$$$
+  .profile_container {
+    // border: 2px solid red;
+    margin-right: 20px;
+    // margin-top: 8%;
+    img {
+      width: 500px;
+      height: 643px;
+      margin-right: 100px;
+    }
+  }
+  // TEXT CONTAINER $$$$$$$
+  .text_two_container {
+    font-size: 30px;
+    font-weight: bold;
+    width: 45%;
+    // margin-right: 100px;
+    // margin-top: 8%;
+    // border: 2px solid red;
+  }
 }

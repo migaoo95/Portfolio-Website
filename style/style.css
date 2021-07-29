@@ -168,15 +168,67 @@
   width: 100%;
   height: 780px;
   background-color: #233554;
-  -webkit-transform: skewY(4deg);
-          transform: skewY(4deg);
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
   z-index: -2;
+}
+
+.page_marker {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+}
+
+.page_marker .textNline {
+  position: relative;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page_marker .textNline .line {
+  margin-top: 22px;
+  margin-right: 20px;
+  border-radius: 20px;
+  width: 220px;
+  height: 0px;
+  border: 2px solid black;
+}
+
+.page_marker .textNline h4 {
+  font-size: 40px;
+}
+
+.page_marker span {
+  font-size: 70px;
 }
 
 .section_two {
   width: 90%;
   height: 800px;
-  margin: 80px auto;
-  border: 2px solid black;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_two .profile_container {
+  margin-right: 20px;
+}
+
+.section_two .profile_container img {
+  width: 500px;
+  height: 643px;
+  margin-right: 100px;
+}
+
+.section_two .text_two_container {
+  font-size: 30px;
+  font-weight: bold;
+  width: 45%;
 }
 /*# sourceMappingURL=style.css.map */
