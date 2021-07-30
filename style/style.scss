@@ -270,6 +270,7 @@ $main-font: "menlo";
 .page_marker_two {
   position: relative;
   top: 20px;
+  height: 90px;
   .page_marker_container {
     position: relative;
     top: -100px;
@@ -299,8 +300,50 @@ $main-font: "menlo";
 }
 // SECTION THREE CONTENT ---------
 .section_three_content {
-  width: 90%;
-  height: 800px;
+  width: 95%;
+  // height: 700px;
   margin: 0px auto;
-  border: 2px solid red;
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  // padding: ;
+  .project_container {
+    margin: 10px 30px;
+    .project_main_container {
+      border: 3px solid white;
+      height: 550px;
+    }
+    .tech_icons {
+      position: relative;
+      top: -10px;
+      display: flex;
+      justify-content: space-between;
+      // border: 2px solid green;
+      padding: 0px 30px;
+      // height: 120px;
+      transform: scale(0.6);
+
+      img {
+        margin: 0px 30px;
+      }
+    }
+    h4 {
+      margin: 0px 10px;
+      margin-top: 10px;
+      font-size: 25px;
+
+      color: #c7c7c7;
+    }
+    p {
+      font-size: 28px;
+      margin-bottom: 15px;
+      font-weight: 400;
+      color: #00ffc2;
+      text-align: center;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
