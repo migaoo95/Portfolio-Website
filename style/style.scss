@@ -12,6 +12,7 @@ $main-font: "menlo";
   width: 100%;
   height: 70px;
   // background-color: #3d4b62;
+  z-index: 1;
   font-size: 20px;
   .navigation_wrap {
     display: flex;
@@ -129,80 +130,82 @@ $main-font: "menlo";
 }
 .section_one {
   top: -100px;
-  position: absolute;
+  position: relative;
   padding: 150px 0;
   width: 100%;
   height: 840px;
   background-color: #233554;
   // transform: skewY(1deg);
-  z-index: -2;
+  // z-index: -2;
 }
 // SECTION TWO ---------------
-
-.section_two_all_content {
-  // border: 2px solid red;
-  max-width: 1689px;
-  margin: 0 auto;
-  .atom_image {
-    // border: 1px solid red;
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    overflow: hidden;
-    img {
-      position: relative;
-      top: -105px;
-      left: 63%;
-      // width: 300px;
-      // height: 400px;
-    }
-  }
-  .page_marker {
-    position: relative;
-    top: 20px;
-    // border: 2px solid green;
-    margin-left: 20px;
-    .textNline {
-      position: relative;
-
-      margin-left: 30px;
-      display: flex;
-      // border: 2px solid blue;
-      .line {
-        margin-top: 22px;
-        margin-right: 20px;
-        border-radius: 20px;
-        width: 220px;
-        height: 0px;
-        border: 2px solid black;
-      }
-      h4 {
-        font-size: 40px;
-      }
-    }
-    span {
-      font-size: 80px;
-    }
-  }
-  .section_two {
-    width: 80%;
-    height: 800px;
-    margin: 50px auto;
-    max-width: 1250px;
-    // border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    // PAGE MARKER CONTAINER $$$$$$$
-
-    // PROFILE CONTAINER $$$$$$
-    .profile_container {
-      // border: 2px solid red;
-      // margin-right: 20px;
-      // margin-top: 8%;
+.section_two {
+  position: relative;
+  top: -100px;
+  // border: 4px solid red;
+  // background-color: red;
+  .section_two_all_content {
+    // border: 2px solid red;
+    max-width: 1689px;
+    margin: 0 auto;
+    .atom_image {
+      // border: 1px solid red;
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      overflow: hidden;
       img {
+        position: relative;
+        top: -105px;
+        left: 63%;
+        // width: 300px;
+        // height: 400px;
+      }
+    }
+    .page_marker {
+      position: relative;
+      top: 20px;
+      // border: 2px solid green;
+      margin-left: 20px;
+      .textNline {
+        position: relative;
+
+        margin-left: 30px;
+        display: flex;
+        // border: 2px solid blue;
+        .line {
+          margin-top: 22px;
+          margin-right: 20px;
+          border-radius: 20px;
+          width: 220px;
+          height: 0px;
+          border: 2px solid black;
+        }
+        h4 {
+          font-size: 40px;
+        }
+      }
+      span {
+        font-size: 80px;
+      }
+    }
+
+    .section_two_profile_text {
+      width: 80%;
+      height: 800px;
+      margin: 50px auto;
+      max-width: 1250px;
+      // border: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      // PAGE MARKER CONTAINER $$$$$$$
+
+      // PROFILE CONTAINER $$$$$$
+      .profile_container {
+        // border: 2px solid red;
         width: 500px;
         height: 643px;
-        margin-right: 70px;
+        margin-right: 90px;
       }
     }
     // TEXT CONTAINER $$$$$$$
@@ -268,108 +271,110 @@ $main-font: "menlo";
 }
 
 // SECTION THREE -----------
-.section_three_container {
-  // border: 3px solid green;
-  // max-width: 1300px;
-}
-.section_three {
-  top: -50px;
-  // max-width: 2000px;
-  position: absolute;
-  padding: 150px 0;
-  width: 100%;
-  height: 1500px;
-  background-color: #233554;
-  // transform: skewY(2deg);
-  z-index: -2;
-}
-// PAGE MARKER two $$$$$$$$$
-.page_marker_two {
-  // border: 3px solid green;
-  position: relative;
-  // top: 20px;
-  height: 90px;
-  padding-bottom: 50px;
-
-  .page_marker_container {
-    position: relative;
+.section_threee {
+  .section_three_container {
+    // border: 3px solid green;
+    // max-width: 1300px;
+  }
+  .section_three_all_content {
     top: -50px;
-    margin-left: 30px;
-    // border: 3px solid red;
-    max-width: 1689px;
-    margin: 0 auto;
-    padding-left: 30px;
+    // max-width: 2000px;
+    position: absolute;
+    padding: 150px 0;
+    width: 100%;
+    height: 1500px;
+    background-color: #233554;
+    // transform: skewY(2deg);
+    z-index: -2;
   }
-  .textNline {
+  // PAGE MARKER two $$$$$$$$$
+  .page_marker_two {
+    // border: 3px solid green;
     position: relative;
-    margin-left: 30px;
-    display: flex;
-    .line {
-      margin-top: 22px;
-      margin-right: 20px;
-      border-radius: 20px;
-      width: 220px;
-      height: 0px;
-      border: 2px solid white;
-    }
-    h4 {
-      color: white;
-      font-size: 40px;
-    }
-  }
-  span {
-    color: white;
-    font-size: 80px;
-  }
-}
-// SECTION THREE CONTENT ---------
-.section_three_content {
-  width: 95%;
-  // height: 700px;
-  max-width: 1400px;
-  margin: 0px auto;
-  // border: 2px solid red;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  // padding: ;
-  .project_container {
-    margin: 10px 30px;
-    .project_main_container {
-      border: 3px solid white;
-      height: 550px;
-    }
-    .tech_icons {
-      position: relative;
-      top: -10px;
-      display: flex;
-      justify-content: space-between;
-      // border: 2px solid green;
-      padding: 0px 30px;
-      // height: 120px;
-      transform: scale(0.6);
+    // top: 20px;
+    height: 90px;
+    padding-bottom: 50px;
 
-      img {
-        margin: 0px 30px;
+    .page_marker_container {
+      position: relative;
+      top: -50px;
+      margin-left: 30px;
+      // border: 3px solid red;
+      max-width: 1689px;
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+    .textNline {
+      position: relative;
+      margin-left: 30px;
+      display: flex;
+      .line {
+        margin-top: 22px;
+        margin-right: 20px;
+        border-radius: 20px;
+        width: 220px;
+        height: 0px;
+        border: 2px solid white;
+      }
+      h4 {
+        color: white;
+        font-size: 40px;
       }
     }
-    h4 {
-      margin: 0px 10px;
-      margin-top: 10px;
-      font-size: 25px;
-
-      color: #c7c7c7;
-    }
-    p {
-      font-size: 28px;
-      margin-bottom: 15px;
-      font-weight: 400;
-      color: #00ffc2;
-      text-align: center;
+    span {
+      color: white;
+      font-size: 80px;
     }
   }
-  img {
-    width: 100%;
+  // SECTION THREE CONTENT ---------
+  .section_three_content {
+    width: 95%;
+    // height: 700px;
+    max-width: 1400px;
+    margin: 0px auto;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    // padding: ;
+    .project_container {
+      margin: 10px 30px;
+      .project_main_container {
+        border: 3px solid white;
+        height: 550px;
+      }
+      .tech_icons {
+        position: relative;
+        top: -10px;
+        display: flex;
+        justify-content: space-between;
+        // border: 2px solid green;
+        padding: 0px 30px;
+        // height: 120px;
+        transform: scale(0.6);
+
+        img {
+          margin: 0px 30px;
+        }
+      }
+      h4 {
+        margin: 0px 10px;
+        margin-top: 10px;
+        font-size: 25px;
+
+        color: #c7c7c7;
+      }
+      p {
+        font-size: 28px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        color: #00ffc2;
+        text-align: center;
+      }
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 // SECTION FOUR -----------------------
