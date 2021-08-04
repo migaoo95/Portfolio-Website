@@ -6,6 +6,9 @@ $main-font: "menlo";
   margin: 0;
   font-family: $main-font;
 }
+body {
+  height: 3100px;
+}
 // NAVIGATION --------------------
 .section_navigation {
   position: relative;
@@ -13,7 +16,7 @@ $main-font: "menlo";
   height: 70px;
   // background-color: #3d4b62;
   z-index: 1;
-  font-size: 20px;
+  font-size: 15px;
   .navigation_wrap {
     display: flex;
     justify-content: space-between;
@@ -21,6 +24,7 @@ $main-font: "menlo";
     .logo_container {
       // border: 2px solid black;
       margin: 15px;
+      margin-left: 30px;
       .logo {
         // width: 50px;
         height: 100%;
@@ -36,15 +40,18 @@ $main-font: "menlo";
         align-items: center;
         text-decoration: none;
         height: 100%;
+        padding-right: 20px;
         li {
           margin-left: 40px;
           list-style-type: none;
           align-items: center;
           &:last-child {
-            border: 1px solid white;
-            padding: 10px;
+            border: 2px solid white;
+            padding: 8px 20px;
           }
           a {
+            // font-family: roboto;
+            font-weight: 0;
             text-decoration: none;
             color: white;
             align-items: center;
@@ -60,12 +67,13 @@ $main-font: "menlo";
 .section_one_wrapper {
   color: white;
   display: flex;
-
+  // border: 2px solid red;
   .section_one_content {
     // border: 2px solid green;
     max-width: 1140px;
+    min-width: 1084px;
     padding: 175px 0px;
-    width: 100%;
+    width: 80%;
     height: 585px;
     margin: 0 auto;
     color: white;
@@ -79,8 +87,15 @@ $main-font: "menlo";
       display: flex;
       flex-direction: column;
       justify-content: center;
+      img {
+        position: absolute;
+        left: -70px;
+        top: 1px;
+      }
       h1 {
+        position: relative;
         font-size: 40px;
+        z-index: 2;
       }
     }
     h3 {
@@ -134,11 +149,11 @@ $main-font: "menlo";
   padding: 150px 0;
   width: 100%;
   height: 840px;
-  background-color: #233554;
+  background-color: #121330;
   // transform: skewY(1deg);
   // z-index: -2;
 }
-// SECTION TWO ---------------
+// SECTION TWO ----------------------------------
 .section_two {
   position: relative;
   top: -100px;
@@ -156,12 +171,13 @@ $main-font: "menlo";
       overflow: hidden;
       img {
         position: relative;
-        top: -105px;
-        left: 63%;
+        top: -130px;
+        left: 80%;
         // width: 300px;
         // height: 400px;
       }
     }
+    // PAGE MARKER  $$$$$$$$$$$$$$$$$$$$$----
     .page_marker {
       position: relative;
       top: 20px;
@@ -174,7 +190,7 @@ $main-font: "menlo";
         display: flex;
         // border: 2px solid blue;
         .line {
-          margin-top: 22px;
+          margin-top: 12px;
           margin-right: 20px;
           border-radius: 20px;
           width: 220px;
@@ -182,73 +198,97 @@ $main-font: "menlo";
           border: 2px solid black;
         }
         h4 {
-          font-size: 40px;
+          font-size: 25px;
         }
       }
       span {
-        font-size: 80px;
+        font-size: 60px;
       }
     }
 
     .section_two_profile_text {
       width: 80%;
       height: 800px;
-      margin: 50px auto;
-      max-width: 1250px;
+      margin: 70px auto;
+      max-width: 1140px;
       // border: 2px solid black;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       // PAGE MARKER CONTAINER $$$$$$$
 
       // PROFILE CONTAINER $$$$$$
       .profile_container {
         // border: 2px solid red;
-        width: 500px;
-        height: 643px;
-        margin-right: 90px;
+        width: 440px;
+        height: 593px;
+        margin-right: 30px;
+        img {
+          // margin-top: 20px;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
     // TEXT CONTAINER $$$$$$$
     .text_two_container {
-      font-size: 30px;
+      font-size: 18px;
       font-weight: bold;
-      width: 70%;
-      margin-right: 130px;
+      width: 45%;
+      // margin-right: 130px;
       // margin-top: 8%;
       // border: 2px solid red;
       .text_two_box {
-        span {
-          color: black;
-          font-size: 40px;
-          font-weight: bolder;
-          // vertical-align: sub;
-        }
-        h4 {
-          color: #229f43;
-          margin-top: 3px;
-        }
-
         .tech_container_one {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
-          margin: 10px 0px;
+          // margin: 10px 0px;
+          margin-top: 20px;
+          span {
+            display: flex;
+            flex-direction: column;
+          }
+          img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+          }
         }
         .tech_container_two {
           // border: 2px solid blue;
           // width: 41.6%;
+
           display: flex;
           // justify-content: ;
-          margin-bottom: 10px;
-          h4 {
-            margin-right: 38px;
-          }
+          margin: 15px 0;
+          // justify-content: space-evenly;
           span {
-            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 80px;
+          }
+          img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
           }
         }
+        .tech_container_three {
+          display: flex;
+          margin: 15px 0;
+          justify-content: center;
+          span {
+            display: flex;
+            flex-direction: column;
+          }
+          img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+          }
+        }
+
         .text_three_container {
-          // border: 2px solid green;
           p {
             text-align: center;
           }
@@ -271,19 +311,29 @@ $main-font: "menlo";
 }
 
 // SECTION THREE -----------
+
 .section_threee {
+  position: relative;
+  top: -200px;
+  background-color: #121330;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  // border: 2px solid red;
+
   .section_three_container {
+    position: relative;
     // border: 3px solid green;
+    // margin-top: 20px;
     // max-width: 1300px;
   }
   .section_three_all_content {
-    top: -50px;
+    // top: -165px;
     // max-width: 2000px;
     position: absolute;
     padding: 150px 0;
     width: 100%;
     height: 1500px;
-    background-color: #233554;
+
     // transform: skewY(2deg);
     z-index: -2;
   }
@@ -293,11 +343,11 @@ $main-font: "menlo";
     position: relative;
     // top: 20px;
     height: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 
     .page_marker_container {
       position: relative;
-      top: -50px;
+      // top: -30px;
       margin-left: 30px;
       // border: 3px solid red;
       max-width: 1689px;
@@ -309,7 +359,7 @@ $main-font: "menlo";
       margin-left: 30px;
       display: flex;
       .line {
-        margin-top: 22px;
+        margin-top: 12px;
         margin-right: 20px;
         border-radius: 20px;
         width: 220px;
@@ -318,54 +368,56 @@ $main-font: "menlo";
       }
       h4 {
         color: white;
-        font-size: 40px;
+        font-size: 25px;
       }
     }
     span {
       color: white;
-      font-size: 80px;
+      font-size: 60px;
     }
   }
   // SECTION THREE CONTENT ---------
   .section_three_content {
     width: 95%;
     // height: 700px;
-    max-width: 1400px;
+    max-width: 1140px;
     margin: 0px auto;
     // border: 2px solid red;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    padding: 0 60px;
     // padding: ;
     .project_container {
-      margin: 10px 30px;
+      margin: 10px 15px;
+      // border: 3px solid red;
       .project_main_container {
-        border: 3px solid white;
-        height: 550px;
+        border: 3px solid rgb(199, 197, 197);
+        height: 380px;
       }
       .tech_icons {
         position: relative;
-        top: -10px;
+        top: 15px;
         display: flex;
         justify-content: space-between;
         // border: 2px solid green;
-        padding: 0px 30px;
+        // padding: 0px -10px;
         // height: 120px;
         transform: scale(0.6);
 
         img {
-          margin: 0px 30px;
+          margin: 0px 20px;
         }
       }
       h4 {
         margin: 0px 10px;
         margin-top: 10px;
-        font-size: 25px;
+        font-size: 15px;
 
-        color: #c7c7c7;
+        color: white;
       }
       p {
-        font-size: 28px;
+        font-size: 18px;
         margin-bottom: 15px;
         font-weight: 400;
         color: #00ffc2;
@@ -379,35 +431,38 @@ $main-font: "menlo";
 }
 // SECTION FOUR -----------------------
 .section_four {
-  top: -130px;
+  top: -200px;
   position: relative;
-  padding: 150px 0;
+  // padding: 150px 0;
   width: 100%;
-  height: 900px;
+  height: 850px;
   background-color: black;
   // transform: skewY(2deg);
-  z-index: -3;
+  // z-index: -3;
 }
 // PAGE MARKER THREE ------------
 .page_marker_three {
-  // position: absolute;
-  top: 30px;
+  // border: 3px solid green;
+  position: relative;
+  // top: 20px;
   height: 90px;
-  // border: 4px solid red;
-  .page_markerr_container {
-    // border: 4px solid greenyellow;
+  padding-bottom: 50px;
+
+  .page_marker_container {
     position: relative;
-    top: 45px;
-    max-width: 1600px;
+    top: 20px;
+    margin-left: 30px;
+    // border: 3px solid red;
+    max-width: 1689px;
     margin: 0 auto;
-    // margin-left: 30px;
+    padding-left: 30px;
   }
   .textNline {
     position: relative;
     margin-left: 30px;
     display: flex;
     .line {
-      margin-top: 22px;
+      margin-top: 12px;
       margin-right: 20px;
       border-radius: 20px;
       width: 220px;
@@ -416,12 +471,12 @@ $main-font: "menlo";
     }
     h4 {
       color: white;
-      font-size: 40px;
+      font-size: 25px;
     }
   }
   span {
     color: white;
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 // SECTION FOUR CONTAINER $$$$$$
@@ -456,7 +511,7 @@ $main-font: "menlo";
     margin: 0 auto;
     // padding: 100px;
     max-width: 809px;
-    padding: 50px 100px;
+    padding: 0px 100px 0px 100px;
     margin-top: 50px;
     // border: 3px solid red;
     color: white;
@@ -505,7 +560,7 @@ $main-font: "menlo";
         textarea::placeholder,
         input::placeholder {
           color: #00ffc2;
-          font-size: 30px;
+          font-size: 25px;
           position: relative;
         }
         input::placeholder {
