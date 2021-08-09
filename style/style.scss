@@ -1,4 +1,4 @@
-// VARAIBLES -------------
+// VARAIBLES ------------------------------------------------------------------------
 $main-font: "menlo";
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ $main-font: "menlo";
 body {
   height: 3100px;
 }
-// NAVIGATION --------------------
+// NAVIGATION ------------------------------------------------------------------------
 .section_navigation {
   position: relative;
   width: 100%;
@@ -49,6 +49,12 @@ body {
             border: 2px solid white;
             padding: 8px 20px;
           }
+          .li_ex {
+            i {
+              margin-left: 5px;
+              font-size: 18px;
+            }
+          }
           a {
             // font-family: roboto;
             font-weight: 0;
@@ -63,7 +69,7 @@ body {
     }
   }
 }
-// SECTION ONE -------------------
+// SECTION ONE -----------------------------------------------------------------------------
 .section_one_wrapper {
   color: white;
   display: flex;
@@ -153,7 +159,23 @@ body {
   // transform: skewY(1deg);
   // z-index: -2;
 }
-// SECTION TWO ----------------------------------
+// SECTION TWO ---------------------------------------------------------------------
+@media only screen and (min-width: 1720px) {
+  body {
+    // background: lightblue;
+  }
+  .atom_image {
+    // border: 5px solid green !important;
+    height: 120%;
+    top: 0px;
+    padding-top: 80px;
+    // overflow: visible !important;
+    img {
+      left: 61% !important;
+    }
+  }
+}
+
 .section_two {
   position: relative;
   top: -100px;
@@ -169,10 +191,11 @@ body {
       z-index: -1;
       right: 0;
       overflow: hidden;
+      // padding-top: 0 !important;
       img {
         position: relative;
         top: -130px;
-        left: 80%;
+        left: 78%;
         // width: 300px;
         // height: 400px;
       }
@@ -180,29 +203,31 @@ body {
     // PAGE MARKER  $$$$$$$$$$$$$$$$$$$$$----
     .page_marker {
       position: relative;
-      top: 20px;
+      top: 17px;
       // border: 2px solid green;
       margin-left: 20px;
       .textNline {
         position: relative;
 
-        margin-left: 30px;
+        margin-left: 25px;
         display: flex;
         // border: 2px solid blue;
         .line {
-          margin-top: 12px;
+          margin-top: 5px;
           margin-right: 20px;
           border-radius: 20px;
           width: 220px;
           height: 0px;
-          border: 2px solid black;
+          border: 1px solid black;
         }
         h4 {
-          font-size: 25px;
+          position: relative;
+          font-size: 20px;
+          top: -5px;
         }
       }
       span {
-        font-size: 60px;
+        font-size: 50px;
       }
     }
 
@@ -231,35 +256,80 @@ body {
     }
     // TEXT CONTAINER $$$$$$$
     .text_two_container {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       width: 45%;
       // margin-right: 130px;
       // margin-top: 8%;
       // border: 2px solid red;
       .text_two_box {
+        .web_dev {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          color: #2978b8;
+          hr {
+            margin-top: 10px;
+            width: 170px;
+            border: 1px solid #2978b8;
+          }
+        }
+        .web_dev3 {
+          hr {
+            width: 70px;
+          }
+        }
+        .web_dev2 {
+          hr {
+            width: 200px;
+          }
+        }
+        .react {
+          width: 44px !important;
+          height: 40px !important;
+        }
+        .btn_cv {
+          // border: 2px solid red;
+          display: flex;
+          justify-content: center;
+          button {
+            cursor: pointer;
+            background: none;
+            padding: 5px 10px;
+            &:hover {
+              transition: all 0.2s;
+              background: grey;
+              color: white;
+            }
+          }
+        }
         .tech_container_one,
         .tech_container_two {
           // border: 2px solid red;
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
           // margin: 10px 0px;
-          margin-top: 20px;
+          margin-top: 15px;
           span {
             display: flex;
             flex-direction: column;
           }
           img {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 35px;
             margin: 0 auto;
           }
           p {
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
           }
         }
+        .tech_container_one {
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
         .tech_container_two {
+          justify-content: space-evenly;
           margin-bottom: 10px;
         }
 
@@ -272,8 +342,8 @@ body {
             flex-direction: column;
           }
           img {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 35px;
             margin: 0 auto;
           }
         }
@@ -300,7 +370,7 @@ body {
   }
 }
 
-// SECTION THREE -----------
+// SECTION THREE ------------------------------------------------------------------------
 
 .section_threee {
   position: relative;
@@ -354,16 +424,16 @@ body {
         border-radius: 20px;
         width: 220px;
         height: 0px;
-        border: 2px solid white;
+        border: 1px solid white;
       }
       h4 {
         color: white;
-        font-size: 25px;
+        font-size: 20px;
       }
     }
     span {
       color: white;
-      font-size: 60px;
+      font-size: 50px;
     }
   }
   // SECTION THREE CONTENT ---------
@@ -378,8 +448,30 @@ body {
     margin-bottom: 30px;
     padding: 0 60px;
     // padding: ;
-
+    .arrow_container {
+      // border: 2px solid green;
+      // margin-top: 25px;
+      color: black;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 42%;
+      span {
+        font-size: 70px;
+        margin-top: 25px;
+        opacity: 0;
+        cursor: pointer;
+      }
+      &:hover {
+        span {
+          transition: all 0.4s;
+          opacity: 1;
+        }
+      }
+    }
     .project_container {
+      position: relative;
       margin: 10px 15px 30px 15px;
       // border: 2px solid green;
       span {
@@ -396,6 +488,7 @@ body {
       }
       // border: 3px solid red;
       .project_main_container {
+        position: relative;
         border: 3px solid rgb(199, 197, 197);
         height: 100%;
       }
@@ -449,16 +542,42 @@ body {
     }
   }
 }
-// SECTION FOUR -----------------------
+// SECTION FOUR ------------------------------------------------------------------------
 .section_four {
   top: -200px;
   position: relative;
   // padding: 150px 0;
   width: 100%;
-  height: 850px;
+  height: 800px;
   background-color: black;
   // transform: skewY(2deg);
   // z-index: -3;
+  .bg_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    // border: 2px solid red;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1385px;
+
+    .list {
+      // margin-right: 500px;
+    }
+    span {
+      font-size: 600px;
+      margin-top: 100px;
+      opacity: 0.09;
+      // filter: grayscale(100%);
+    }
+  }
 }
 // PAGE MARKER THREE ------------
 .page_marker_three {
@@ -470,7 +589,7 @@ body {
 
   .page_marker_container {
     position: relative;
-    top: 20px;
+    top: 10px;
     margin-left: 30px;
     // border: 3px solid red;
     max-width: 1689px;
@@ -487,23 +606,34 @@ body {
       border-radius: 20px;
       width: 220px;
       height: 0px;
-      border: 2px solid white;
+      border: 1px solid white;
     }
     h4 {
       color: white;
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   span {
     color: white;
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 // SECTION FOUR CONTAINER $$$$$$
 .section_four_container {
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    span {
+      font-size: 20px;
+      color: #00ffc2;
+      cursor: pointer;
+    }
+  }
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 550px;
   margin-top: 29px;
   // border: 2px solid red;
 
@@ -512,16 +642,18 @@ body {
     margin: 0 auto;
     width: 60%;
     // border: 2px solid green;
-    height: 60px;
+    height: 50px;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0;
     max-width: 1015px;
 
     h2 {
-      font-size: 35px;
+      font-size: 25px;
       margin-top: 8px;
+      color: white;
+      margin-right: 50px;
     }
   }
   .section_four_content {
@@ -580,7 +712,7 @@ body {
         textarea::placeholder,
         input::placeholder {
           color: #00ffc2;
-          font-size: 25px;
+          font-size: 20px;
           position: relative;
         }
         input::placeholder {
