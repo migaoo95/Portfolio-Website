@@ -67,6 +67,19 @@ body {
 .section_navigation .navigation_wrap .nav ul li:last-child {
   border: 2px solid white;
   padding: 8px 20px;
+  cursor: pointer;
+}
+
+.section_navigation .navigation_wrap .nav ul li:last-child:hover {
+  background: #00ffc330;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section_navigation .navigation_wrap .nav ul li:last-child:hover a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #00ffc2;
 }
 
 .section_navigation .navigation_wrap .nav ul li .li_ex i {
@@ -81,6 +94,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.section_navigation .navigation_wrap .nav ul li a:hover {
+  color: #00ffc2;
 }
 
 .section_one_wrapper {
@@ -154,9 +171,23 @@ body {
 
 .section_one_wrapper .scroll_box {
   position: absolute;
+  cursor: pointer;
+  margin-left: 10px;
   height: 600px;
   text-align: center;
   vertical-align: middle;
+}
+
+.section_one_wrapper .scroll_box:hover p {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #00ffc2;
+}
+
+.section_one_wrapper .scroll_box:hover span {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-top: 30px;
 }
 
 .section_one_wrapper .scroll_box .scroll_box_two {
@@ -178,6 +209,7 @@ body {
 .section_one_wrapper .scroll_box span {
   vertical-align: middle;
   margin-right: 0px;
+  margin-top: 1px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -288,9 +320,13 @@ body {
 }
 
 .section_two .section_two_all_content .text_two_container {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   width: 45%;
+}
+
+.section_two .section_two_all_content .text_two_container p span {
+  color: red;
 }
 
 .section_two .section_two_all_content .text_two_container .text_two_box .web_dev {
@@ -531,17 +567,24 @@ body {
   margin-top: 25px;
   opacity: 0;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .section_threee .section_three_content .arrow_container:hover span {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  opacity: 1;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0.7;
 }
 
 .section_threee .section_three_content .project_container {
   position: relative;
   margin: 10px 15px 30px 15px;
+  cursor: pointer;
+}
+
+.section_threee .section_three_content .project_container:hover {
+  top: -10px;
 }
 
 .section_threee .section_three_content .project_container span {
@@ -654,7 +697,7 @@ body {
 
 .page_marker_three .page_marker_container {
   position: relative;
-  top: 10px;
+  top: 15px;
   margin-left: 30px;
   max-width: 1689px;
   margin: 0 auto;
