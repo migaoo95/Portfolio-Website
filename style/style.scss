@@ -1,9 +1,11 @@
+// IMPORTS ------------------------------------------------------------------------
 @import "./navigation";
 @import "./section_one";
 @import "./section_two";
 @import "./section_three";
 @import "./section_four";
-// VARAIBLES ------------------------------------------------------------------------
+
+// BODY AND MAIN ELEMENTS ------------------------------------------------------------------------
 $main-font: "menlo";
 * {
   box-sizing: border-box;

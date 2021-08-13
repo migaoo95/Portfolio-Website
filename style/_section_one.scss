@@ -1,3 +1,4 @@
+@import "varaibles.scss";
 // SECTION ONE -----------------------------------------------------------------------------
 .section_one_wrapper {
   color: white;
@@ -51,7 +52,7 @@
       font-weight: 100;
     }
     span {
-      color: #00ffc2;
+      color: $lightgreenspan;
     }
   }
 }
@@ -98,7 +99,7 @@
     &:hover {
       p {
         transition: all 0.4s;
-        color: #00ffc2;
+        color: $lightgreenspan;
       }
       span {
         transition: all 0.4s;

@@ -1,3 +1,4 @@
+@import "varaibles.scss";
 .section_threee {
   position: relative;
   top: -200px;
@@ -117,7 +118,7 @@
           font-size: 30px;
           cursor: pointer;
           &:hover {
-            color: #00ffc2;
+            color: $lightgreenspan;
           }
         }
 
@@ -137,7 +138,7 @@
         font-size: 15px;
         margin-bottom: 15px;
         font-weight: 400;
-        color: #00ffc2;
+        color: $lightgreenspan;
         text-align: center;
       }
     }
