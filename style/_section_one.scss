@@ -1,0 +1,126 @@
+// SECTION ONE -----------------------------------------------------------------------------
+.section_one_wrapper {
+  color: white;
+  display: flex;
+  max-width: 1350px;
+  position: relative;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    right: 0;
+    top: 28%;
+  }
+  .section_one_content {
+    max-width: 1180px;
+    padding: 175px 0px;
+    width: 90%;
+    height: 585px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    .text_animation_box {
+      position: relative;
+      top: -10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        position: absolute;
+        left: -70px;
+        top: 1px;
+      }
+      h1 {
+        position: relative;
+        font-size: 40px;
+        z-index: 2;
+      }
+    }
+    h3 {
+      span {
+        font-size: 20px;
+        font-weight: 40;
+      }
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 45px;
+      font-weight: 100;
+    }
+    span {
+      color: #00ffc2;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .text_box {
+    h1 {
+      font-size: 38px !important;
+    }
+    h2 {
+      font-size: 35px !important;
+    }
+  }
+  .text_animation_box {
+    top: -25px !important;
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+  .section_one_wrapper {
+    overflow: hidden;
+    img {
+      position: absolute;
+      right: -100px;
+      top: 25%;
+    }
+  }
+}
+.section_one {
+  top: -100px;
+  position: relative;
+  padding: 150px 0;
+  width: 100%;
+  height: 840px;
+  background-color: #121330;
+  // SCROLL ELEMENTS ----------------
+  .scroll_box {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 600px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    &:hover {
+      p {
+        transition: all 0.4s;
+        color: #00ffc2;
+      }
+      span {
+        transition: all 0.4s;
+        margin-top: 30px;
+      }
+    }
+    .scroll_box_two {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 65px;
+      top: 42%;
+    }
+    span {
+      vertical-align: middle;
+      margin-right: 0px;
+      margin-top: 1px;
+      transform: rotate(-90deg);
+    }
+    .scroller {
+      transform: rotate(-90deg);
+    }
+  }
+}

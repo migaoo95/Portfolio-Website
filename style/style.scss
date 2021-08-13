@@ -1,3 +1,8 @@
+@import "./navigation";
+@import "./section_one";
+@import "./section_two";
+@import "./section_three";
+@import "./section_four";
 // VARAIBLES ------------------------------------------------------------------------
 $main-font: "menlo";
 * {
@@ -9,873 +14,18 @@ $main-font: "menlo";
 body {
   height: 3100px;
 }
-// NAVIGATION ------------------------------------------------------------------------
-.section_navigation {
-  position: relative;
-  width: 100%;
-  height: 70px;
-  // background-color: #3d4b62;
-  z-index: 1;
-  font-size: 15px;
-  .navigation_wrap {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    .logo_container {
-      // border: 2px solid black;
-      margin: 15px;
-      margin-left: 30px;
-      .logo {
-        // width: 50px;
-        height: 100%;
-      }
-    }
-    .nav {
-      // padding: 10px 15px 0px 0px;
-      height: 100%;
-      margin-right: 20px;
-      ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-decoration: none;
-        height: 100%;
-        padding-right: 20px;
-        li {
-          margin-left: 40px;
-          list-style-type: none;
-          align-items: center;
 
-          &:last-child {
-            border: 2px solid white;
-            padding: 8px 20px;
-            cursor: pointer;
-            &:hover {
-              background: #00ffc330;
-              transition: all 0.2s;
-              a {
-                transition: all 0.2s;
-                color: #00ffc2;
-              }
-            }
-          }
-          .li_ex {
-            i {
-              margin-left: 5px;
-              font-size: 18px;
-            }
-          }
-          a {
-            // font-family: roboto;
-            font-weight: 0;
-            text-decoration: none;
-            color: white;
-            &:hover {
-              color: #00ffc2;
-              // transition: all 0.2s;
-            }
-            align-items: center;
-            &:last-child {
-            }
-          }
-        }
-      }
-    }
-  }
-}
-// SECTION ONE -----------------------------------------------------------------------------
-.section_one_wrapper {
-  color: white;
-  display: flex;
-  // border: 2px solid red;
-  max-width: 1350px;
-  position: relative;
-  margin: 0 auto;
-  img {
-    position: absolute;
-    right: 0;
-    top: 28%;
-  }
-  .section_one_content {
-    // border: 2px solid green;
-    max-width: 1180px;
-    // min-width: 1084px;
-    padding: 175px 0px;
-    width: 90%;
-    height: 585px;
-    margin: 0 auto;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-
-    // .text_box {
-    //   // border: 2px solid green;
-    // }
-    .text_animation_box {
-      // margin-left: 30px;
-      position: relative;
-      top: -10px;
-      // border: 1px solid red;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      img {
-        position: absolute;
-        left: -70px;
-        top: 1px;
-      }
-      h1 {
-        position: relative;
-        font-size: 40px;
-        z-index: 2;
-      }
-    }
-    h3 {
-      span {
-        font-size: 20px;
-        font-weight: 40;
-      }
-    }
-    h1 {
-      font-size: 48px;
-      font-weight: 400;
-    }
-    h2 {
-      font-size: 45px;
-      font-weight: 100;
-    }
-    span {
-      color: #00ffc2;
-    }
-  }
-}
-@media only screen and (max-width: 1180px) {
-  .text_box {
-    h1 {
-      font-size: 38px !important;
-    }
-    h2 {
-      font-size: 35px !important;
-    }
-  }
-  .text_animation_box {
-    top: -25px !important;
-    h1 {
-      font-size: 30px !important;
-    }
-  }
-  .section_one_wrapper {
-    overflow: hidden;
-    img {
-      position: absolute;
-      right: -100px;
-      top: 25%;
-    }
-  }
-}
-.section_one {
-  top: -100px;
-  position: relative;
-  padding: 150px 0;
-  width: 100%;
-  height: 840px;
-  background-color: #121330;
-  // SCROLL ELEMENTS ----------------
-  .scroll_box {
-    position: absolute;
-    cursor: pointer;
-    // border: 2px solid white;
-    margin-left: 10px;
-    height: 600px;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    &:hover {
-      p {
-        transition: all 0.4s;
-        color: #00ffc2;
-      }
-      span {
-        // color: red;
-        transition: all 0.4s;
-        margin-top: 30px;
-      }
-    }
-    .scroll_box_two {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      // Animate this for arrow effect
-      height: 65px;
-      top: 42%;
-      // border: 2px solid pink;
-    }
-    span {
-      vertical-align: middle;
-      margin-right: 0px;
-      margin-top: 1px;
-      transform: rotate(-90deg);
-    }
-    .scroller {
-      transform: rotate(-90deg);
-    }
-  }
-  // transform: skewY(1deg);
-  // z-index: -2;
-}
-// .bg_icon_one {
-//   position: absolute;
-//   // border: 2px solid red;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -2;
-//   span {
-//     position: relative;
-//     // border: 2px solid red;
-//     font-size: 700px;
-//     opacity: 0.3;
-//     left: -100px;
-//     margin-top: 50px;
-//   }
-// }
-
-// SECTION TWO ---------------------------------------------------------------------
+// RESPONSIVE MEDIA QUERIES FOR ALL SECTIONS ------------------
 @media only screen and (min-width: 1720px) {
   .atom_image {
-    // border: 5px solid green !important;
     height: 120%;
     top: 0px;
     padding-top: 80px;
-    // overflow: visible !important;
     img {
       left: 61% !important;
     }
   }
 }
-
-.section_two {
-  position: relative;
-  top: -100px;
-  // border: 4px solid red;
-  // background-color: red;
-  .section_two_all_content {
-    // border: 2px solid red;
-    max-width: 1689px;
-    margin: 0 auto;
-    .atom_image {
-      // border: 1px solid red;
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      overflow: hidden;
-      // padding-top: 0 !important;
-      img {
-        position: relative;
-        top: -130px;
-        left: 78%;
-        // width: 300px;
-        // height: 400px;
-      }
-    }
-    // PAGE MARKER  $$$$$$$$$$$$$$$$$$$$$----
-    .page_marker {
-      position: relative;
-      top: 17px;
-      // border: 2px solid green;
-      margin-left: 20px;
-      .textNline {
-        position: relative;
-
-        margin-left: 25px;
-        display: flex;
-        // border: 2px solid blue;
-        .line {
-          margin-top: 5px;
-          margin-right: 20px;
-          border-radius: 20px;
-          width: 220px;
-          height: 0px;
-          border: 1px solid black;
-        }
-        h4 {
-          position: relative;
-          font-size: 20px;
-          top: -5px;
-        }
-      }
-      span {
-        font-size: 50px;
-      }
-    }
-
-    .section_two_profile_text {
-      width: 80%;
-      height: 750px;
-      margin: 70px auto;
-      max-width: 1140px;
-      // border: 2px solid black;
-      display: flex;
-      justify-content: center;
-      // PAGE MARKER CONTAINER $$$$$$$
-
-      // PROFILE CONTAINER $$$$$$
-      .profile_container {
-        // border: 2px solid red;
-        width: 440px;
-        height: 593px;
-        margin-right: 30px;
-
-        img {
-          // margin-top: 20px;
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
-    // TEXT CONTAINER $$$$$$$
-    .text_two_container {
-      font-size: 17px;
-      font-weight: bold;
-      width: 45%;
-      // h1 {
-      //   text-align: center;
-      //   // font-size: 23px;
-      //   // color: #2978b8;
-      // }
-      p {
-        span {
-          color: red;
-        }
-      }
-      // margin-right: 130px;
-      // margin-top: 8%;
-      // border: 2px solid red;
-      .text_two_box {
-        .web_dev {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          color: #2978b8;
-          hr {
-            margin-top: 10px;
-            width: 170px;
-            border: 1px solid #2978b8;
-          }
-        }
-        .web_dev3 {
-          hr {
-            width: 70px;
-          }
-        }
-        .web_dev2 {
-          hr {
-            width: 200px;
-          }
-        }
-        .react {
-          width: 44px !important;
-          height: 40px !important;
-        }
-        .btn_cv {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          button {
-            cursor: pointer;
-            background: none;
-            padding: 5px 10px;
-            &:hover {
-              transition: all 0.2s;
-              background: grey;
-              color: white;
-            }
-          }
-        }
-        .tech_container_one,
-        .tech_container_two {
-          // border: 2px solid red;
-          display: flex;
-          // justify-content: space-between;
-          // margin: 10px 0px;
-          margin-top: 15px;
-          span {
-            display: flex;
-            flex-direction: column;
-          }
-          img {
-            width: 35px;
-            height: 35px;
-            margin: 0 auto;
-          }
-          p {
-            text-align: center;
-            font-size: 16px;
-          }
-        }
-        .tech_container_one {
-          justify-content: space-between;
-          margin-bottom: 15px;
-        }
-        .tech_container_two {
-          justify-content: space-evenly;
-          margin-bottom: 10px;
-        }
-
-        .tech_container_three {
-          display: flex;
-          margin: 15px 0;
-          justify-content: center;
-          span {
-            display: flex;
-            flex-direction: column;
-          }
-          img {
-            width: 35px;
-            height: 35px;
-            margin: 0 auto;
-          }
-        }
-
-        .text_three_container {
-          p {
-            text-align: center;
-          }
-          .containH4 {
-            display: flex;
-            justify-content: center;
-            // margin-right: 100px;
-            margin-top: 10px;
-          }
-          h4 {
-            color: orange;
-            margin-left: 15px;
-            // margin: 0 35%;
-            // margin-top: 10px;
-          }
-        }
-      }
-    }
-  }
-}
-
-// SECTION THREE ------------------------------------------------------------------------
-
-.section_threee {
-  position: relative;
-  top: -200px;
-  background-color: #121330;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  // border: 2px solid red;
-
-  .section_three_container {
-    position: relative;
-    // border: 3px solid green;
-    // margin-top: 20px;
-    // max-width: 1300px;
-  }
-  .section_three_all_content {
-    // top: -165px;
-    // max-width: 2000px;
-    position: absolute;
-    padding: 150px 0;
-    width: 100%;
-    height: 1500px;
-
-    // transform: skewY(2deg);
-    z-index: -2;
-  }
-  // PAGE MARKER two $$$$$$$$$
-  .page_marker_two {
-    // border: 3px solid green;
-    position: relative;
-    // top: 20px;
-    height: 90px;
-    padding-bottom: 120px;
-
-    .page_marker_container {
-      position: relative;
-      // top: -30px;
-      margin-left: 30px;
-      // border: 3px solid red;
-      max-width: 1689px;
-      margin: 0 auto;
-      padding-left: 30px;
-    }
-    .textNline {
-      position: relative;
-      margin-left: 30px;
-      display: flex;
-      .line {
-        margin-top: 12px;
-        margin-right: 20px;
-        border-radius: 20px;
-        width: 220px;
-        height: 0px;
-        border: 1px solid white;
-      }
-      h4 {
-        color: white;
-        font-size: 20px;
-      }
-    }
-    span {
-      color: white;
-      font-size: 50px;
-    }
-  }
-  // SECTION THREE CONTENT ---------
-  .section_three_content {
-    width: 95%;
-    // height: 700px;
-    max-width: 1140px;
-    margin: 0px auto;
-    // border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    padding: 0 60px;
-    // padding: ;
-    .arrow_container {
-      // border: 2px solid green;
-      // margin-top: 25px;
-      color: black;
-      position: absolute;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 42%;
-      span {
-        font-size: 70px;
-        margin-top: 25px;
-        opacity: 0;
-        cursor: pointer;
-        transition: all 0.5s;
-      }
-      &:hover {
-        span {
-          transition: all 0.6s;
-          opacity: 0.7;
-        }
-      }
-    }
-    .project_container {
-      position: relative;
-      margin: 10px 15px 30px 15px;
-      cursor: pointer;
-      // border: 2px solid green;
-      &:hover {
-        top: -10px;
-      }
-      span {
-        display: flex;
-        justify-content: space-around;
-        // border: 2px solid pink;
-        p {
-          margin-top: 6px;
-        }
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
-      // border: 3px solid red;
-      .project_main_container {
-        position: relative;
-        border: 3px solid rgb(199, 197, 197);
-        height: 100%;
-      }
-      .tech_icons {
-        position: relative;
-        top: 15px;
-        display: flex;
-        justify-content: space-evenly;
-        // border: 2px solid pink;
-        // padding: 0px -10px;
-        // height: 120px;
-        // transform: scale(0.6);
-        i {
-          color: rgb(128, 128, 128);
-          // position: relative;
-          // z-index: 2;
-          // width: 30px;
-          // height: 30px;
-          font-size: 30px;
-          cursor: pointer;
-          &:hover {
-            color: #00ffc2;
-          }
-        }
-
-        img {
-          // margin: 0px 20px;
-
-          width: 30px;
-          height: 30px;
-          // border: 2px solid green;
-        }
-      }
-      h4 {
-        margin: 0px 10px;
-        margin-top: 10px;
-        font-size: 15px;
-
-        color: white;
-      }
-      p {
-        font-size: 15px;
-        margin-bottom: 15px;
-        font-weight: 400;
-        color: #00ffc2;
-        text-align: center;
-      }
-    }
-    img {
-      width: 100%;
-    }
-  }
-}
-// SECTION FOUR ------------------------------------------------------------------------
-.section_four {
-  top: -200px;
-  position: relative;
-  // padding: 150px 0;
-  width: 100%;
-  height: 800px;
-  background-color: black;
-  // transform: skewY(2deg);
-  // z-index: -3;
-  .bg_icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    // border: 2px solid red;
-    color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1385px;
-    overflow: hidden;
-
-    .list {
-      // margin-right: 500px;
-    }
-    span {
-      font-size: 600px;
-      margin-top: 100px;
-      opacity: 0.09;
-      // filter: grayscale(100%);
-    }
-  }
-}
-// PAGE MARKER THREE ------------
-.page_marker_three {
-  // border: 3px solid green;
-  position: relative;
-  // top: 20px;
-  height: 90px;
-  padding-bottom: 50px;
-
-  .page_marker_container {
-    position: relative;
-    top: 15px;
-    margin-left: 30px;
-    // border: 3px solid red;
-    max-width: 1689px;
-    margin: 0 auto;
-    padding-left: 30px;
-  }
-  .textNline {
-    position: relative;
-    margin-left: 30px;
-    display: flex;
-    .line {
-      margin-top: 12px;
-      margin-right: 20px;
-      border-radius: 20px;
-      width: 220px;
-      height: 0px;
-      border: 1px solid white;
-    }
-    h4 {
-      color: white;
-      font-size: 20px;
-    }
-  }
-  span {
-    color: white;
-    font-size: 50px;
-  }
-}
-// SECTION FOUR CONTAINER $$$$$$
-.section_four_container {
-  h1 {
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-    span {
-      font-size: 20px;
-      color: #00ffc2;
-      cursor: pointer;
-    }
-  }
-  position: absolute;
-  width: 100%;
-  height: 550px;
-  margin-top: 29px;
-  // border: 2px solid red;
-
-  margin: 0 auto !important;
-  .emailLink {
-    margin: 0 auto;
-    width: 60%;
-    // border: 2px solid green;
-    height: 50px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    max-width: 1015px;
-
-    h2 {
-      font-size: 25px;
-      margin-top: 8px;
-      color: white;
-      margin-right: 50px;
-    }
-  }
-  .section_four_content {
-    width: 60%;
-    height: 100%;
-    // border: 2px solid red;
-    margin: 0 auto;
-    // padding: 100px;
-    max-width: 809px;
-    padding: 0px 100px 0px 100px;
-    margin-top: 50px;
-    // border: 3px solid red;
-    color: white;
-
-    .form_container {
-      // border: 2px solid white;
-      width: 100%;
-      margin: 0 auto;
-      height: 100%;
-      color: white;
-      form {
-        margin: 0 auto;
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: white;
-
-        button {
-          background-color: #00ffc2;
-          padding: 10px 30px;
-          margin: 0 auto;
-        }
-        input,
-        textarea {
-          margin-bottom: 0px;
-          width: 100%;
-          color: #00ffc2;
-          font-size: 30px;
-        }
-        input {
-          border: 0;
-          outline: 0;
-          background: transparent;
-          border-bottom: 3px solid #00ffc2;
-          height: 50px;
-        }
-        textarea {
-          background: transparent;
-          border: 3px solid #00ffc2;
-          // margin-top: 25px;
-          margin: 25px 0;
-          height: 200px;
-          padding-left: 8px;
-        }
-        textarea::placeholder,
-        input::placeholder {
-          color: #00ffc2;
-          font-size: 20px;
-          position: relative;
-        }
-        input::placeholder {
-          top: 10px;
-        }
-      }
-    }
-  }
-}
-// MOBILE & TABLET ------------------
-// @media only screen and (max-width: 1180px) {
-//   // SCROLL BOX -----------------
-//   .scroll_box {
-//     display: none;
-//   }
-//   // SECTION TWO PROFILE -------------------
-//   .section_two {
-//     .section_two_profile_text {
-//       height: 300px;
-//     }
-//     .atom_image {
-//       // // border: 1px solid red;
-//       // position: absolute;
-//       // z-index: -1;
-//       // right: 0;
-//       // overflow: hidden;
-//       // // padding-top: 0 !important;
-//       img {
-//         // position: relative;
-//         // top: -130px;
-//         left: 84% !important;
-//         // width: 300px;
-//         // height: 400px;
-//       }
-//     }
-//     .tech_container_one,
-//     .tech_container_two,
-//     .tech_container_three {
-//       margin-top: 5px !important;
-//     }
-
-//     hr {
-//     }
-//     .text_two_container {
-//       font-size: 14px !important;
-//       p {
-//         font-size: 14px;
-//       }
-//       span {
-//         p {
-//           font-size: 13px !important;
-//         }
-//       }
-//     }
-//     .profile_container {
-//       border: 2px solid red;
-//       width: 310px !important;
-//       height: 453px !important;
-//       img {
-//         // height: 90% !important;
-//         // width: 90% !important;
-//       }
-//     }
-//   }
-// }
-// .section_threee {
-//   top: -300px !important;
-// }
 @media only screen and (max-width: 1180px) {
   .scroll_box {
     display: none;
@@ -885,10 +35,7 @@ body {
       .atom_image {
         img {
           position: relative;
-          // top: -130px;
           left: 84%;
-          // width: 300px;
-          // height: 400px;
         }
       }
       // PAGE MARKER  $$$$$$$$$$$$$$$$$$$$$----
@@ -902,13 +49,12 @@ body {
         span {
         }
       }
-
       .section_two_profile_text {
         // PAGE MARKER CONTAINER $$$$$$$
         height: 600px;
+        min-width: 719px;
         // PROFILE CONTAINER $$$$$$
         .profile_container {
-          border: 2px solid red;
           width: 310px;
           height: 453px;
 
@@ -984,6 +130,203 @@ body {
           }
         }
       }
+    }
+  }
+  // SECTION FOUR -----------------
+  .section_four_content {
+    padding: 0px !important;
+    h1 {
+      font-size: 15px;
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 853px) {
+  .atom_image {
+    img {
+      left: 87% !important;
+    }
+  }
+}
+@media only screen and (max-width: 749px) {
+  .nav {
+    display: none;
+  }
+  .section_one {
+    height: 600px;
+  }
+  .section_one_wrapper {
+    // border: 2px solid yellow;
+    height: 100%;
+    overflow: visible;
+    img {
+      display: none;
+    }
+    .section_one_content {
+      padding-top: 70px !important;
+      .text_animation_box {
+        display: none;
+
+        h1 {
+          margin-top: 200px;
+        }
+      }
+    }
+  }
+  // SECTION TWO --------------------
+  .section_two {
+    width: 100%;
+    .section_two_all_content {
+      position: relative;
+      .page_marker {
+        margin: 0;
+        margin-left: 10px;
+        span {
+          font-size: 30px;
+        }
+        .textNline {
+          h4 {
+            font-size: 15px;
+          }
+        }
+      }
+      .atom_image {
+        img {
+          display: none;
+        }
+      }
+      .section_two_profile_text {
+        flex-direction: column;
+        height: auto;
+        width: 90% !important;
+        margin: 0 auto;
+        min-width: 0;
+        padding-top: 10px;
+        .profile_container {
+          width: 90%;
+          margin: 0 auto;
+          height: 10%;
+          padding: 10px 80px;
+          img {
+          }
+        }
+        .profile_container {
+        }
+        .text_two_container {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // SECTION THREE ---------------------
+  .section_threee {
+    top: -100px;
+    .section_three_container {
+      .section_three_content > * {
+        flex: 0 1 45% !important;
+        justify-content: space-around;
+      }
+      .section_three_content {
+        .project_container {
+          margin: 10px 5px 15px 5px;
+          min-width: 30px;
+          .project_main_container {
+            h4 {
+              font-size: 12px;
+            }
+            .tech_icons {
+              padding: 7px 0;
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+          span {
+            p {
+              font-size: 12px;
+            }
+            img {
+              width: 17px;
+              height: 17px;
+            }
+          }
+        }
+      }
+      .page_marker_two {
+        padding-bottom: 0px;
+        height: 50px;
+        .page_marker_container {
+          padding-left: 0;
+          margin-left: 10px;
+          h4 {
+            font-size: 15px;
+          }
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  // SECTION FOUR --------------------
+  .section_four {
+    top: -120px;
+    height: 690px;
+    .page_marker_three {
+      margin-left: 10px;
+      .page_marker_container {
+        h4 {
+          font-size: 15px;
+        }
+        span {
+          font-size: 30px;
+        }
+      }
+      .section_four_container {
+        .section_four_content {
+          height: 80%;
+          min-width: 300px;
+          .form_container {
+            height: 10% !important;
+            form {
+              textarea {
+                height: 100px;
+              }
+              input::placeholder,
+              textarea::placeholder {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .emailLink {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          img {
+            width: 100%;
+          }
+          p {
+            text-align: center;
+            margin-right: 0;
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  // PAGE MARKERS --------------------------
+  .page_marker_container {
+    padding-left: 0 !important;
+    h4 {
+      font-size: 15px !important;
+    }
+    span {
+      font-size: 30px !important;
     }
   }
 }
