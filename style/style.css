@@ -809,6 +809,7 @@
 
 .section_four_container .section_four_content .form_container .field {
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .section_four_container .section_four_content .form_container form {
@@ -833,6 +834,7 @@
   background-color: #00ffc2;
   padding: 10px 30px;
   margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 .section_four_container .section_four_content .form_container form input,
