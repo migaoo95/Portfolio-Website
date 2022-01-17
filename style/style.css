@@ -899,6 +899,37 @@
   top: 10px;
 }
 
+.text_animation_box {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  width: 25%;
+  padding-top: 93px;
+}
+
+.text_animation_box .typing {
+  position: relative;
+  margin-left: 10px;
+  font-size: 40px;
+  color: #c411c4 !important;
+}
+
+@media only screen and (max-width: 749px) {
+  .text_animation_box {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .text_animation_box {
+    width: 50%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
