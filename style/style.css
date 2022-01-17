@@ -838,11 +838,24 @@
   margin-bottom: 8px;
 }
 
+.section_four_container .section_four_content .form_container form input:-webkit-autofill {
+  color: #992424 !important;
+}
+
+.section_four_container .section_four_content .form_container form input:-webkit-autofill,
+.section_four_container .section_four_content .form_container form input:-webkit-autofill:hover,
+.section_four_container .section_four_content .form_container form input:-webkit-autofill:focus,
+.section_four_container .section_four_content .form_container form input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #00ffc2;
+}
+
 .section_four_container .section_four_content .form_container form input,
 .section_four_container .section_four_content .form_container form textarea {
   margin-bottom: 0px;
   width: 100%;
-  color: #00ffc2;
+  color: #00ffc2 !important;
   font-size: 20px;
 }
 
