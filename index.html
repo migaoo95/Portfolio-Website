@@ -260,12 +260,16 @@
       <div class="section_four_content">
         <h1>Feel free to contact me through the <span>form</span>  below or using my <span>email address</span> or <span>linkedIn</span>  account</h1>
         <div class="form_container">
-        <form action="">
-          <input type="text" placeholder="Name">
+           <!-- ----- Email FORM -------- -->
+        <form action="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Name">
           <br>
-          <input type="text" placeholder="Email">
+          <input type="email" name="email" placeholder="Email">
           <br>
-          <textarea type="text" placeholder="Message"></textarea>
+          <textarea type="text" name="message" placeholder="Message"></textarea>
+          <div class="field">
+            <div data-netlify-recaptcha="true" class=""></div>
+          </div>
           <button>Submit</button>
         </form>
   
