@@ -89,7 +89,7 @@
       position: relative;
       margin: 10px 15px 30px 15px;
       cursor: pointer;
-      min-width: 291px;
+      min-width: 310px;
       &:hover {
         top: -10px;
       }
@@ -107,6 +107,13 @@
       .project_main_container {
         position: relative;
         border: 3px solid rgb(199, 197, 197);
+        .project_container_img {
+          // border: 2px solid red;
+          // height: 20% !important;
+          img {
+            height: 220px !important;
+          }
+        }
       }
       .tech_icons {
         padding: 15px 0;

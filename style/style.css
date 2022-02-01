@@ -604,7 +604,7 @@
   position: relative;
   margin: 10px 15px 30px 15px;
   cursor: pointer;
-  min-width: 291px;
+  min-width: 310px;
 }
 
 .section_threee .section_three_content .project_container:hover {
@@ -631,6 +631,10 @@
 .section_threee .section_three_content .project_container .project_main_container {
   position: relative;
   border: 3px solid #c7c5c5;
+}
+
+.section_threee .section_three_content .project_container .project_main_container .project_container_img img {
+  height: 220px !important;
 }
 
 .section_threee .section_three_content .project_container .tech_icons {
