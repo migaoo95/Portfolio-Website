@@ -16,7 +16,10 @@ $main-font: "menlo";
 body {
   height: 3100px;
 }
-
+html,
+body {
+  overscroll-behavior-y: none;
+}
 // RESPONSIVE MEDIA QUERIES FOR ALL SECTIONS ------------------
 @media only screen and (min-width: 1720px) {
   .atom_image {

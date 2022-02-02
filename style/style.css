@@ -335,7 +335,7 @@
 
 .section_two .section_two_all_content .text_two_container {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 400;
   width: 45%;
 }
 
@@ -582,12 +582,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 42%;
+  height: 45%;
 }
 
 .section_threee .section_three_content .arrow_container span {
-  font-size: 70px;
-  margin-top: 25px;
+  font-size: 80px;
+  margin-top: 57px;
   opacity: 0;
   cursor: pointer;
   -webkit-transition: all 0.5s;
@@ -611,6 +611,11 @@
   top: -10px;
 }
 
+.section_threee .section_three_content .project_container:hover .project_main_container {
+  -webkit-box-shadow: rgba(24, 153, 185, 0.25) 0px 54px 55px, rgba(0, 255, 194, 0.12) 0px -12px 30px, rgba(0, 255, 194, 0.12) 0px 4px 6px, rgba(0, 255, 194, 0.17) 0px 12px 13px, rgba(0, 255, 194, 0.09) 0px -3px 5px;
+          box-shadow: rgba(24, 153, 185, 0.25) 0px 54px 55px, rgba(0, 255, 194, 0.12) 0px -12px 30px, rgba(0, 255, 194, 0.12) 0px 4px 6px, rgba(0, 255, 194, 0.17) 0px 12px 13px, rgba(0, 255, 194, 0.09) 0px -3px 5px;
+}
+
 .section_threee .section_three_content .project_container span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,15 +635,16 @@
 
 .section_threee .section_three_content .project_container .project_main_container {
   position: relative;
-  border: 3px solid #c7c5c5;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+          box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .section_threee .section_three_content .project_container .project_main_container .project_container_img img {
-  height: 220px !important;
+  height: 210px !important;
 }
 
 .section_threee .section_three_content .project_container .tech_icons {
-  padding: 15px 0;
+  padding: 15px;
   top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +673,7 @@
   margin: 0px 10px;
   margin-top: 10px;
   font-size: 15px;
+  font-weight: 200;
   color: white;
 }
 
@@ -816,6 +823,10 @@
   padding: 0px 100px 0px 100px;
   margin-top: 50px;
   color: white;
+}
+
+.section_four_container .section_four_content h1 {
+  font-weight: 100;
 }
 
 .section_four_container .section_four_content .form_container {
@@ -976,6 +987,11 @@
 
 body {
   height: 3100px;
+}
+
+html,
+body {
+  overscroll-behavior-y: none;
 }
 
 @media only screen and (min-width: 1720px) {
