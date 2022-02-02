@@ -977,12 +977,19 @@
   }
 }
 
+@font-face {
+  font-family: "Menlo Regularr";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Menlo Regular"), url("/font/Menlo-Regular.woff") format("woff");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "menlo";
+  font-family: "Menlo Regularr";
 }
 
 body {
@@ -992,30 +999,6 @@ body {
 html,
 body {
   overscroll-behavior-y: none;
-}
-
-/* fallback */
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v121/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format("woff2");
-}
-
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
 }
 
 @media only screen and (min-width: 1720px) {
