@@ -70,13 +70,27 @@
       width: 100%;
       height: 45%;
       // border: 2px solid red;
-
+      outline: none;
+      &:focus {
+        color: red !important;
+      }
       span {
         font-size: 80px;
         margin-top: 57px;
         opacity: 0;
         cursor: pointer;
         transition: all 0.5s;
+        // Hide element highlight on click
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:focus {
+          color: red !important;
+        }
       }
       &:hover {
         span {
