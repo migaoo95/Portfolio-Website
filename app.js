@@ -96,6 +96,5 @@ document.addEventListener("scroll", () => {
     document.querySelector(".scroller").textContent = "Scroll";
     document.querySelector(".arrB").style.display = "block";
   }
-  console.log(window.pageYOffset);
 });
 // Insted of having to change top pixel value have different scroller for each section
