@@ -187,6 +187,10 @@
   }
 }
 
+.scrollerd1 {
+  top: 920px !important;
+}
+
 .section_one {
   top: -100px;
   position: relative;
@@ -196,7 +200,7 @@
   background-color: #121330;
 }
 
-.section_one .scroll_box {
+.scroll_box {
   position: absolute;
   cursor: pointer;
   margin-left: 10px;
@@ -204,21 +208,22 @@
   text-align: center;
   vertical-align: middle;
   color: white;
+  z-index: 2;
 }
 
-.section_one .scroll_box:hover p {
+.scroll_box:hover p {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #00ffc2;
 }
 
-.section_one .scroll_box:hover span {
+.scroll_box:hover span {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   margin-top: 30px;
 }
 
-.section_one .scroll_box .scroll_box_two {
+.scroll_box .scroll_box_two {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,7 +239,7 @@
   top: 42%;
 }
 
-.section_one .scroll_box span {
+.scroll_box span {
   vertical-align: middle;
   margin-right: 0px;
   margin-top: 1px;
@@ -242,7 +247,7 @@
           transform: rotate(-90deg);
 }
 
-.section_one .scroll_box .scroller {
+.scroll_box .scroller {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -506,7 +511,6 @@
   position: absolute;
   padding: 150px 0;
   width: 100%;
-  height: 1500px;
   z-index: -2;
 }
 

@@ -80,6 +80,9 @@
     }
   }
 }
+.scrollerd1 {
+  top: 920px !important;
+}
 .section_one {
   top: -100px;
   position: relative;
@@ -88,40 +91,41 @@
   height: 840px;
   background-color: #121330;
   // SCROLL ELEMENTS ----------------
-  .scroll_box {
-    position: absolute;
-    cursor: pointer;
-    margin-left: 10px;
-    height: 600px;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    &:hover {
-      p {
-        transition: all 0.4s;
-        color: $lightgreenspan;
-      }
-      span {
-        transition: all 0.4s;
-        margin-top: 30px;
-      }
-    }
-    .scroll_box_two {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 65px;
-      top: 42%;
+}
+.scroll_box {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 600px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  z-index: 2;
+  &:hover {
+    p {
+      transition: all 0.4s;
+      color: $lightgreenspan;
     }
     span {
-      vertical-align: middle;
-      margin-right: 0px;
-      margin-top: 1px;
-      transform: rotate(-90deg);
+      transition: all 0.4s;
+      margin-top: 30px;
     }
-    .scroller {
-      transform: rotate(-90deg);
-    }
+  }
+  .scroll_box_two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65px;
+    top: 42%;
+  }
+  span {
+    vertical-align: middle;
+    margin-right: 0px;
+    margin-top: 1px;
+    transform: rotate(-90deg);
+  }
+  .scroller {
+    transform: rotate(-90deg);
   }
 }
