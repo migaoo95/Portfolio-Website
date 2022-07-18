@@ -22,38 +22,38 @@ let letter = "";
   setTimeout(type, 600);
 })();
 // SLIDE SHOW ---------------------------
-const slider = document.getElementById("slider");
-const sliders = document.querySelectorAll("#slider");
-const images = ["img1", "img2", "img3"];
-let index = 0;
-document.querySelectorAll("#arrow_icon_left").forEach((arrow) => {
-  arrow.addEventListener("click", (e) => {
-    imageChange(e);
-  });
-});
+// const slider = document.getElementById("slider");
+// const sliders = document.querySelectorAll("#slider");
+// const images = ["img1", "img2", "img3"];
+// let index = 0;
+// document.querySelectorAll("#arrow_icon_left").forEach((arrow) => {
+//   arrow.addEventListener("click", (e) => {
+//     imageChange(e);
+//   });
+// });
 
-document.querySelectorAll("#arrow_icon_right").forEach((arrow) => {
-  arrow.addEventListener("click", (e) => {
-    imageChange(e);
-  });
-});
-function imageChange(e) {
-  if (index < 2) {
-    index++;
-  } else {
-    index = 0;
-  }
-  if (e.target.parentElement.classList.contains("arrow1")) {
-    sliders[0].src = `assets/CryptoStats/${images[index]}.png`;
-    console.log("Arrow1");
-  } else if (e.target.parentElement.classList.contains("arrow2")) {
-    sliders[1].src = `assets/WeatherApp/${images[index]}.png`;
-    console.log("Arrow2");
-  } else {
-    sliders[2].src = `assets/Portfolio/${images[index]}.png`;
-    console.log("Arrow3");
-  }
-}
+// document.querySelectorAll("#arrow_icon_right").forEach((arrow) => {
+//   arrow.addEventListener("click", (e) => {
+//     imageChange(e);
+//   });
+// });
+// function imageChange(e) {
+//   if (index < 2) {
+//     index++;
+//   } else {
+//     index = 0;
+//   }
+//   if (e.target.parentElement.classList.contains("arrow1")) {
+//     sliders[0].src = `assets/CryptoStats/${images[index]}.png`;
+//     console.log("Arrow1");
+//   } else if (e.target.parentElement.classList.contains("arrow2")) {
+//     sliders[1].src = `assets/WeatherApp/${images[index]}.png`;
+//     console.log("Arrow2");
+//   } else {
+//     sliders[2].src = `assets/Portfolio/${images[index]}.png`;
+//     console.log("Arrow3");
+//   }
+// }
 // Page Scroller ------------------------ { Scroller }
 
 let section;
