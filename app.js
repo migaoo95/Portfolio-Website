@@ -87,7 +87,7 @@ document.addEventListener("scroll", () => {
     document.querySelector(".scroll_box").style.top = "1750px";
     document.querySelector(".scroll_box").style.color = "white";
   } else if (window.pageYOffset > 1700) {
-    document.querySelector(".scroll_box").style.top = "2450px";
+    document.querySelector(".scroll_box").style.top = "3000px";
     document.querySelector(".scroll_box").style.color = "white";
     document.querySelector(".scroller").textContent = "Back to Top";
     document.querySelector(".arrB").style.display = "none";
